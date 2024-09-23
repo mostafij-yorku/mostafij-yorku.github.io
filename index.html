@@ -1,1 +1,104 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostafij - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .portfolio-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: calc(30% - 20px);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a graduate student at York University. </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <!-- <img src="project1.jpg" alt="Project 1"> -->
+                    <h3>Software Verification</h3>
+                    <p>We are investigating the usability of generative ai in formal verification</p>
+                </div>
+
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, please reach out via <a href="mailto:mostafij@yorku.ca">email</a>.</p>
+        </section>
+    </div>
+
+
+</body>
+</html>
